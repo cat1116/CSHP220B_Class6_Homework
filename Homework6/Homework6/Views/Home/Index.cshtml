@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">        
+        <div class="row">
+            <div class="col">
+                <h2>Send a Birthday Card!</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col btn btn-info">
+                @Html.ActionLink("Send Card", "SendBirthdayCard")
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
+
+
+

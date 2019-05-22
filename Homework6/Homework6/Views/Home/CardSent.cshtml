@@ -1,0 +1,35 @@
+﻿@model Homework6.Models.BirthdayCard
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/Content/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
+        <title>It's on the way! –-------»</title>
+    </head>
+@{
+    Layout = null;
+}
+    <body>
+        <div class="container">
+
+            <h2 class="text-info">A birthday card was sent...</h2>
+
+            <p>
+                <span style="font-weight:bold;">To:</span><br />
+                <span style="font-weight:normal;">@Model.To</span>
+</p>
+
+            <p>
+                <span style="font-weight:bold;">From:</span><br />
+                <span style="font-weight:normal;">@Model.From</span>
+</p>
+
+            <p>
+                <span style="font-weight:bold;">Message:</span><br />
+                <span style="font-weight:normal;">"@Model.Message"</span>
+</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+﻿@model Homework6.Models.BirthdayCard
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
+    <style type="text/css">
+        pre {
+            background-color: transparent;
+            border: none;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <title>Send a Birthday Card :)</title>
+</head>
+@{
+    Layout = null;
+}
+
+
+<body>
+    @using (Html.BeginForm())
+    {
+        <div class="container">
+            <h2 class="text-info">Send a Birthday Card!</h2>
+            <pre>
+                iiiiiiiiii
+              |:H:a:p:p:y:|
+            __|___________|__
+            |^^^^^^^^^^^^^^^^^|
+            |:B:i:r:t:h:d:a:y:|
+            ~~~~~~~~~~~~~~~~~~~</pre>
+
+            <div style="height:55px;margin-top:0;">
+                @Html.ValidationSummary() &nbsp;
+
+            </div>
+
+            <p>
+                <label style="font-weight:bold;">To:</label><br />
+                @Html.TextBoxFor(t => t.To, new { @class = "form-control", maxlength = 50, style = "width:200px;" })
+            </p>
+
+            <p>
+                <label style="font-weight:bold;">From:</label><br />
+                @Html.TextBoxFor(t => t.From, new { @class = "form-control", maxlength = 50, style = "width:200px;" })
+            </p>
+
+            <p>
+                <label style="font-weight:bold;">Message:</label><br />
+                @Html.TextBoxFor(t => t.Message, new { @class = "form-control", maxlength = 50, style = "width:350px;" })
+
+            </p>
+
+            <input type="submit" value="Send Card" class="btn btn-info" />
+        </div>
+    }
+</body>
+</html>
