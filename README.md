@@ -1,5 +1,6 @@
 # CSHP220B_Class6_Homework
 Class 6 Homework - Catherine Powell
+
 Homework 6 : Birthday Card Generator
 The site should display a birthday card page with fields: To, From and Message.
 
